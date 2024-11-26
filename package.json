@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.13.5",
     "@fontsource/londrina-shadow": "^5.1.0",
     "@mui/material": "^6.1.8",
+    "@nextui-org/react": "^2.4.8",
     "lucide-react": "^0.414.0",
     "material-icons": "^1.13.12",
     "mdb-react-ui-kit": "^9.0.0",
