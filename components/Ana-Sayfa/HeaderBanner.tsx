@@ -7,10 +7,10 @@ import Head from 'next/head';
 export const HeaderBanner = () => {
 
   const data = [
-    "/banner2.png",
-    "/banner2.png",       
-    "/banner2.png",
-    "/banner2.png",
+    "/Banner2.png",
+    "/Banner2.png",       
+    "/Banner2.png",
+    "/Banner2.png",
   ];
 
   const [currSlide, setCurrSlide] = useState(0)
