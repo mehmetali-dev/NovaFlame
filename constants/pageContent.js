@@ -1,4 +1,4 @@
-import { PDFWorker } from "pdfjs-dist";
+
 
 
 const pageContent = [

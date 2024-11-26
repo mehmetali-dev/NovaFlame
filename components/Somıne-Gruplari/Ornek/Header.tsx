@@ -2,13 +2,8 @@
 
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import { Document, Page } from 'react-pdf';
 import { FaExpand } from 'react-icons/fa';
 import Head from 'next/head';
-import { pdfjs } from 'react-pdf'; // pdfjs'i import ediyoruz
-
-// Worker'ın yolunu ayarlıyoruz
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 interface PostContentProps {
     title: string;
@@ -19,11 +14,8 @@ interface PostContentProps {
 
 const Header: React.FC<PostContentProps> = ({ title, content, images, pdf }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [isPdfOpen, setIsPdfOpen] = useState(false);
     const [isFullScreen, setIsFullScreen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-    const [numPages, setNumPages] = useState(0);
-    const [pageNumber, setPageNumber] = useState(1);
 
     // Slider için otomatik kaydırma
     useEffect(() => {
@@ -50,15 +42,8 @@ const Header: React.FC<PostContentProps> = ({ title, content, images, pdf }) => 
     const nextSlide = () => setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     const prevSlide = () => setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
 
-    const openPdf = () => setIsPdfOpen(true);
-    const closePdf = () => setIsPdfOpen(false);
-
     const toggleFullScreen = () => {
         setIsFullScreen(!isFullScreen);
-    };
-
-    const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
-        setNumPages(numPages);
     };
 
     return (
@@ -139,55 +124,15 @@ const Header: React.FC<PostContentProps> = ({ title, content, images, pdf }) => 
                                 <FaExpand className="w-5 h-5" />
                             </button>
                         </div>
-                        <div id="Pdfline" className="mt-2 flex-grow h-60 overflow-hidden">
-                            <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                                <Page pageNumber={pageNumber} />
-                            </Document>
-                        </div>
                         <a 
-                            href="/katalog.pdf" 
-                            download 
+                            href={pdf} 
+                            download
                             className="mt-4 inline-block text-center bg-transparent border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white py-2 px-4 rounded transition-colors duration-200"
                         >
                             PDF İndir
                         </a>
                     </div>
                 </div>
-
-                {/* PDF Tam Ekran Görüntüleyici */}
-                {isPdfOpen && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-                        <div className="relative w-full max-w-4xl h-[80vh] bg-white rounded-lg p-4 overflow-auto">
-                            <button onClick={closePdf} className="absolute top-2 right-2 text-gray-600 hover:text-black">
-                                Kapat
-                            </button>
-                            <div className="h-full">
-                                <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                                    <Page pageNumber={pageNumber} />
-                                </Document>
-                            </div>
-                        </div>
-                    </div>
-                )}
-
-                {/* Tam Ekran Açma Durumu */}
-                {isFullScreen && (
-                    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-                        <div className="relative w-[80%] max-w-[900px] h-[80%] bg-white rounded-lg p-4 overflow-auto shadow-lg">
-                            <button
-                                onClick={toggleFullScreen}
-                                className="absolute top-2 right-2 text-gray-600 hover:text-orange-500 transition-colors duration-200 text-sm font-semibold z-50"
-                            >
-                                Kapat
-                            </button>
-                            <div className="h-full z-10">
-                                <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
-                                    <Page pageNumber={pageNumber} />
-                                </Document>
-                            </div>
-                        </div>
-                    </div>
-                )}
             </div>
         </>
     );
