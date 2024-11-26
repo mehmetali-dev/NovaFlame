@@ -19,8 +19,13 @@
 }
 
 body {
-
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
+
+
+
 
 @layer utilities {
   .text-balance {
@@ -56,3 +61,29 @@ body {
   font-family: "Londrina Shadow";
   font-weight: 400;
 }
+
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+/* Flame animation */
+@keyframes flameEffect {
+  0% {
+      background-position: 0 100%;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}
+
+.flame-effect {
+  color: transparent;
+  background: linear-gradient(180deg, #ff4500, #ffd700);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: flameEffect 3s infinite alternate ease-in-out;
+  opacity: 1 !important;
+}
+
+
