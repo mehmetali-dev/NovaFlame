@@ -117,21 +117,21 @@ const Header: React.FC<PostContentProps> = ({ title, content, images, pdf }) => 
                     </div>
 
                     {/* PDF Kartı */}
-                    <div className="w-full md:w-1/4 p-4 bg-gray-200 rounded-lg shadow-lg cursor-pointer flex flex-col">
-                        <div className="flex justify-between items-center">
-                            <h4 className="font-semibold text-lg">Ürün Kataloğu</h4>
-                            <button onClick={toggleFullScreen} className="text-gray-600 hover:text-black">
-                                <FaExpand className="w-5 h-5" />
-                            </button>
-                        </div>
-                        <a 
-                            href={pdf} 
-                            download
-                            className="mt-4 inline-block text-center bg-transparent border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white py-2 px-4 rounded transition-colors duration-200"
-                        >
-                            PDF İndir
-                        </a>
-                    </div>
+                    <div className="w-full md:w-1/4 p-4 bg-gray-200 rounded-lg shadow-lg cursor-pointer flex flex-col md:h-[300px]">
+    <div className="flex justify-between items-center">
+        <h4 className="font-semibold text-lg">Ürün Kataloğu</h4>
+        <button onClick={toggleFullScreen} className="text-gray-600 hover:text-black">
+            <FaExpand className="w-5 h-5" />
+        </button>
+    </div>
+    <a 
+        href={pdf} 
+        download
+        className="mt-4 inline-block text-center bg-transparent border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white py-2 px-4 rounded transition-colors duration-200"
+    >
+        PDF İndir
+    </a>
+</div>
                 </div>
             </div>
         </>
