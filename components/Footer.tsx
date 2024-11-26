@@ -1,20 +1,49 @@
 import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import Head from 'next/head'; 
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
+<>
+    {/* SEO Meta Tagleri */}
+    <Head>
+                <title>Anasayfa - Nova Flame</title>
+                <meta name="description" content=" Gaziantep, Adana, Mersin, Kahramanmaraş, Şanlıurfa, Malatya, Adıyaman, Hatay Ve Tüm Güneydoğu Bölgesinde Odunlu şömine, barbekü, elektrikli şömine, ekmek fırınları, biogazlı şömine çeşitlerimiz ile sektörde siz müşterilerimize kaliteli, güvenilir ve ekonomik hizmetler sunmaya kararlılıkla devam etmekteyiz." />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <meta name="keywords" content="Gaziantep Şömine, Adana Şömine, Şanlıurfa Şömine, Hatay Şömine, Adıyaman Şömine, Güneydoğu Şömine, Elektrikli Şömine, Elektrikli Şömine Modelleri, elektrikli somine, elektrikli şömine üreticileri, elektrikli şömine modelleri ve fiyatları, elektrikli şömine 150cm, tektes şömine, elektrikli şömine malatya, elektrikli şömine çeşitleri, elektrikli somine modelleri, hazır şömine modelleri, şömine fiyatları, şömine elektrik, zaya şömine, , flameline şömine, dekoratif şömine, 150cm elektrikli şömine, hazir sömine, odun şömine fiyatları, elektrikli şömine tasarımları, elektrikli şömine dekorasyon, elektrikli şömine haznesi, dlc şömine, şömine elektrikli, portatif elektrikli şömine, elk şömine, taşınılabilir elektrikli şömine, elektrikli şömine görselleri, elektronik şömine, salon elektrikli şömine,   " />
+                <link rel="canonical" href="https://novasomine.com/" />
+                <meta name="robots" content="index, follow" />
+                
+               
+                <meta property="og:title" content="Anasayfa - Nova Flame" />
+                <meta property="og:description" content=" Gaziantep, Adana, Mersin, Kahramanmaraş, Şanlıurfa, Malatya, Adıyaman, Hatay Ve Tüm Güneydoğu Bölgesinde Odunlu şömine, barbekü, elektrikli şömine, ekmek fırınları, biogazlı şömine çeşitlerimiz ile sektörde siz müşterilerimize kaliteli, güvenilir ve ekonomik hizmetler sunmaya kararlılıkla devam etmekteyiz." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://novasomine.com" />
+                <meta property="og:image" content="https://novasomine.com" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:site_name" content="Nova Flame" />
+                <meta property="og:locale" content="tr_TR" />
+
+                
+            </Head>
+
+    <footer className="bg-[#f2f2f2]">
       <div className="mx-auto max-w-screen-xl space-y-8 px-2 py-16 sm:px-6 lg:space-y-16 lg:px-4">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-          <div className="text-teal-600 mb-8">
-  <img
+            <div className="text-teal-600 mb-8">
+            <Link href="/">
+  <Image
     src="/novasominelogo.webp"
     alt="menu-icon"
     width={250}
     height={150}
     className="transition-transform duration-300 ease-in-out hover:scale-110"
   />
-</div>
+</Link>
+            </div>
 
 
             <p className="mt-4 max-w-xs text-gray-500">
@@ -23,7 +52,7 @@ const Footer = () => {
 
             <ul className="mt-8 flex gap-6">
               <li>
-                <a
+                <Link
                   href="https://www.facebook.com/share/2oG5jo6SfQHKLxbJ/?mibextid=LQQJ4d"
                   rel="noreferrer"
                   target="_blank"
@@ -38,11 +67,11 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="https://www.instagram.com/novasomine?igsh=MWNyN2dtODJ1Z3Exeg=="
                   rel="noreferrer"
                   target="_blank"
@@ -57,18 +86,32 @@ const Footer = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.youtube.com/@flamelinesomine8117"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="text-gray-700 transition hover:opacity-75"
+                >
+                  <span className="sr-only">Youtube</span>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+</svg>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="#"
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"
                 >
 
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -79,19 +122,19 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Ücretsiz Kurulum </a>
+                  <a className="text-gray-700 transition hover:opacity-75"> Ücretsiz Kurulum </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Garanti Ve Bakım </a>
+                  <a className="text-gray-700 transition hover:opacity-75"> Garanti Ve Bakım </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">Teknik Servis  </a>
+                  <a className="text-gray-700 transition hover:opacity-75">Teknik Servis  </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Kolay İade </a>
+                  <a className="text-gray-700 transition hover:opacity-75"> Kolay İade </a>
                 </li>
 
 
@@ -103,24 +146,25 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Elektrikli Şömineler </a>
+                  <Link href="/somine-gruplari/elektrikli2" className="text-gray-700 transition hover:opacity-75"> Elektrikli Şömineler </Link>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Bahçe Şömineleri</a>
+                  <Link href="/somine-gruplari/elektrikli1" className="text-gray-700 transition hover:opacity-75"> Orta Şömine Hazneleri</Link>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Klasik  Şömineler  </a>
+                  <Link href="/somine-gruplari/elektrikli5" className="text-gray-700 transition hover:opacity-75"> Klasik Şömine Hazneleri  </Link>
+                </li>
+               
+                <li>
+                  <Link href="/somine-gruplari/elektrikli4" className="text-gray-700 transition hover:opacity-75"> Barbekü Şömineler  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Barbekü Şömineler  </a>
+                  <Link href="/somine-gruplari/elektrikli3" className="text-gray-700 transition hover:opacity-75"> etanol Şömine Hazneleri  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Etanol Şömineler  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Şömine Aksesuarları   </a>
+                  <Link href="/somine-gruplari/elektrikli8" className="text-gray-700 transition hover:opacity-75"> Şömine Aksesuarları   </Link>
                 </li>
               </ul>
             </div>
@@ -130,97 +174,132 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Anasayfa </a>
+                  <Link href="/" className="text-gray-700 transition hover:opacity-75"> Anasayfa </Link>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Hakkımızda </a>
+                  <Link href="/#hakkimizda" className="text-gray-700 transition hover:opacity-75"> Hakkımızda </Link>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Şömine Grupları  </a>
+                  <Link href="/somine-gruplari" className="text-gray-700 transition hover:opacity-75"> Şömine Grupları  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> Uygulamalarımız  </a>
+                  <Link href="/uygulamalar" className="text-gray-700 transition hover:opacity-75"> Uygulamalarımız  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75"> İletişim  </a>
+                  <Link href="/iletisim" className="text-gray-700 transition hover:opacity-75"> İletişim  </Link>
                 </li>
               </ul>
             </div>
 
             <div>
-              <p className="font-medium text-gray-900">İletişim Bilgileri</p>
+              <div>
+                <p className="font-medium text-gray-900">İletişim Bilgileri</p>
 
-              <ul className="mt-6 space-y-4 text-sm">
-   
-              <li>
-    <a href="tel:05336929890" className="text-gray-700 transition hover:opacity-75" style={{ display: 'flex', alignItems: 'center' }}>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={20} style={{ marginRight: 10 }}>
-            <path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"/>
-        </svg>
-        +90 533 692 98 90
-    </a>
-</li>
+                <ul className="mt-6 space-y-4 text-sm">
+                  <li>
+                    <Link href="tel:05336929890" className="text-gray-700 transition hover:opacity-75 flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={20} className="mr-2">
+                        <path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z" />
+                      </svg>
+                      +90 533 692 98 90
+                    </Link>
+                  </li>
 
-
-                <li>
-                <a 
-    href="https://maps.app.goo.gl/TQLU6PMQKguhoHew7" 
-    className="text-gray-700 transition hover:opacity-75" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    style={{ display: 'flex', alignItems: 'center' }}
->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width={70} style={{ marginRight: 20 }}>
-        <g data-name="Search Map">
-            <path d="M30.58 4.19a.995.995 0 0 0-.9-.14l-8.7 2.9-9.61-2.88-.08-.03a.7.7 0 0 0-.14-.03 1.064 1.064 0 0 0-.47.04l-9 3A1.014 1.014 0 0 0 1 8v19a.983.983 0 0 0 .42.81A.939.939 0 0 0 2 28a1.185 1.185 0 0 0 .32-.05l8.7-2.9 9.69 2.91c.03.01.05.01.08.02A1.492 1.492 0 0 0 21 28a1.185 1.185 0 0 0 .32-.05l9-3A1.014 1.014 0 0 0 31 24V5a.983.983 0 0 0-.42-.81zM10 23.28l-7 2.33V8.72l7-2.33zm19 0-7 2.33v-2.7a5.634 5.634 0 0 1-1 .09 6 6 0 0 1 0-12 5.47 5.47 0 0 1 1 .09V8.72l7-2.33z" />
-            <path d="M17 17a4.004 4.004 0 0 0 4 4 3.955 3.955 0 0 0 2.02-.567l1.273 1.274a1 1 0 0 0 1.414-1.414l-1.274-1.274A3.956 3.956 0 0 0 25 17a4 4 0 0 0-8 0zm6 0a2 2 0 1 1-2-2 2.002 2.002 0 0 1 2 2z" />
-        </g>
-    </svg>
-    Adres: Fatih Mh. Maraşal Fevzi Çakmak Blv. No: 95 Şehitkamil / Gaziantep
-</a>
-
-</li>
-
-
-
-<li>
-    <a href="#" className="text-gray-700 transition hover:opacity-75" style={{ display: 'flex', alignItems: 'center' }}>
-        <svg data-name="1-Mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width={20} style={{ marginRight: 10 }}>
-            <path d="M28 28H4a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4zM4 6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2z"/>
-            <path d="M16 18a1 1 0 0 1-.618-.214l-14-11a1 1 0 1 1 1.236-1.572L16 15.728 29.382 5.214a1 1 0 1 1 1.236 1.572l-14 11A1 1 0 0 1 16 18z"/>
-            <path d="M2 27a1 1 0 0 1-.707-1.707l11-11a1 1 0 0 1 1.414 1.414l-11 11A1 1 0 0 1 2 27zM30 27a1 1 0 0 1-.707-.293l-11-11a1 1 0 0 1 1.414-1.414l11 11A1 1 0 0 1 30 27z"/>
-        </svg>
-        info@novasomine.com
-    </a>
-</li>
+                  <li>
+                    <Link
+                      href="https://maps.app.goo.gl/TQLU6PMQKguhoHew7"
+                      className="text-gray-700 transition hover:opacity-75 flex items-center"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                        width={100}  // Masaüstü için varsayılan genişlik
+                        className="mr-5 sm:w-16 md:w-16 lg:w-16 xl:w-16 2xl:w-16 w-8"  // Masaüstü boyutu aynı kalacak, mobilde küçülme
+                      >
+                        <g data-name="Search Map">
+                          <path d="M30.58 4.19a.995.995 0 0 0-.9-.14l-8.7 2.9-9.61-2.88-.08-.03a.7.7 0 0 0-.14-.03 1.064 1.064 0 0 0-.47.04l-9 3A1.014 1.014 0 0 0 1 8v19a.983.983 0 0 0 .42.81A.939.939 0 0 0 2 28a1.185 1.185 0 0 0 .32-.05l8.7-2.9 9.69 2.91c.03.01.05.01.08.02A1.492 1.492 0 0 0 21 28a1.185 1.185 0 0 0 .32-.05l9-3A1.014 1.014 0 0 0 31 24V5a.983.983 0 0 0-.42-.81zM10 23.28l-7 2.33V8.72l7-2.33zm19 0-7 2.33v-2.7a5.634 5.634 0 0 1-1 .09 6 6 0 0 1 0-12 5.47 5.47 0 0 1 1 .09V8.72l7-2.33z" />
+                          <path d="M17 17a4.004 4.004 0 0 0 4 4 3.955 3.955 0 0 0 2.02-.567l1.273 1.274a1 1 0 0 0 1.414-1.414l-1.274-1.274A3.956 3.956 0 0 0 25 17a4 4 0 0 0-8 0zm6 0a2 2 0 1 1-2-2 2.002 2.002 0 0 1 2 2z" />
+                        </g>
+                      </svg>
+                      Adres: Fatih Mh. Maraşal Fevzi Çakmak Blv. No: 95 Şehitkamil / Gaziantep
+                    </Link>
+                  </li>
 
 
-              </ul>
+
+                  <li>
+                    <Link href="mailto:info@novasomine.com" className="text-gray-700 transition hover:opacity-75 flex items-center">
+                      <svg data-name="1-Mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width={20} className="mr-2">
+                        <path d="M28 28H4a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4zM4 6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2z" />
+                        <path d="M16 18a1 1 0 0 1-.618-.214l-14-11a1 1 0 1 1 1.236-1.572L16 15.728 29.382 5.214a1 1 0 1 1 1.236 1.572l-14 11A1 1 0 0 1 16 18z" />
+                        <path d="M2 27a1 1 0 0 1-.707-1.707l11-11a1 1 0 0 1 1.414 1.414l-11 11A1 1 0 0 1 2 27zM30 27a1 1 0 0 1-.707-.293l-11-11a1 1 0 0 1 1.414-1.414l11 11A1 1 0 0 1 30 27z" />
+                      </svg>
+                      info@novasomine.com
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Harita Bölümü - Masaüstünde sola al */}
+              <div className="my-4 sm:block hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1581515931784!2d37.354368!3d37.07754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e1658c7ee491%3A0xbfcdd963407d7a0b!2zTk9WQSDFnsOWTcSwTkUgR0FaxLBBTlRFUA!5e0!3m2!1str!2str!4v1729076847542!5m2!1str!2str"
+                  width="600"
+                  height="350"
+                  style={{
+                    border: 0,
+                    marginTop: 70,
+                    marginLeft: 'calc(50% - 410px)', // Masaüstü için sola alındı
+                    transition: 'transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out',
+                  }}
+                  className="transition-transform duration-700 hover:scale-110 hover:translate-y-2 hover:rotate-1 shadow-lg hover:shadow-2xl"
+                  loading="lazy"
+                ></iframe>
+              </div>
+
+              {/* Harita Bölümü - Mobilde Görünür ve Küçültülmüş */}
+              <div className="my-4 sm:hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1581515931784!2d37.354368!3d37.07754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e1658c7ee491%3A0xbfcdd963407d7a0b!2zTk9WQSDFnsOWTcSwTkUgR0FaxLBBTlRFUA!5e0!3m2!1str!2str!4v1729076847542!5m2!1str!2str"
+                  width="95%" // Mobilde yüzde 100 genişlikte
+                  height="250" // Mobilde yüksekliği biraz daha küçültüyoruz
+                  style={{
+                    marginTop: 30,
+                    border: 0,
+                    transition: 'transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out',
+                  }}
+                  className="transition-transform duration-700 hover:scale-110 hover:translate-y-2 hover:rotate-1 shadow-lg hover:shadow-2xl"
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
-        <div className="my-4">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.1581515931784!2d37.354368!3d37.07754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e1658c7ee491%3A0xbfcdd963407d7a0b!2zTk9WQSDFnsOWTcSwTkUgR0FaxLBBTlRFUA!5e0!3m2!1str!2str!4v1729076847542!5m2!1str!2str" 
-    width="600" 
-    height="350" 
-    style={{ 
-      border: 0,
-      marginTop: -80,
-      marginLeft: 700,
-      transition: 'transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out',
-    }} 
-    className="transition-transform duration-700 hover:scale-110 hover:translate-y-2 hover:rotate-1 shadow-lg hover:shadow-2xl"
-    loading="lazy"
-  ></iframe>
+
+        <div>
+  <p className="text-xs text-gray-500 mb-2">
+    &copy; 2024. Nova Şömine. Tüm Hakları Saklıdır.
+  </p>
+  <p className="text-xs text-gray-500">
+    Designed By 
+    <Link className="font-extrabold ml-1" href="https://www.linkedin.com/in/erkanndemirr/" target="_blank">
+      Erkan Demir
+    </Link>  
+    <Link className="font-extrabold ml-2" href="https://www.linkedin.com/in/mehmet-ali-%C3%A7akmak-5a575a230" target="_blank">
+      Mehmet Ali Çakmak
+    </Link>
+  </p>
 </div>
 
 
-        <p className="text-xs text-gray-500">&copy; 2024. Nova Şömine. Tüm Hakları Saklıdır.</p>
       </div>
+    
     </footer>
+    </>
   );
 }
 
