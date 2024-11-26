@@ -1,7 +1,7 @@
 export const menuItem = [
     {
         name: "Ana Sayfa",
-        href: "/dashboard",
+        href: "/",
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ export const menuItem = [
       },
       {
         name: "Hakkımızda",
-        href: "/dashboard",
+        href: "/#hakkimizda",
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ export const menuItem = [
       },
       {
         name: "Şömine Grupları",
-        href: "/dashboard",
+        href: "/somine-gruplari",
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ export const menuItem = [
       },
       {
         name: "Uygulamalar",
-        href: "/dashboard",
+        href: "/uygulamalar",
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +145,7 @@ export const menuItem = [
       },
       {
         name: "İletişim",
-        href: "/dashboard",
+        href: "/iletisim",
         icon: (
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,7 @@
 export const product = [
     {
         "id": 1,
-        "src": "/pao100.png",
+        "src": "/pao100.jpeg",
         "name" : "FlameLine Pao/ZDT100",
         "price" : ""
     },
@@ -13,7 +13,7 @@ export const product = [
     },
     {
         "id": 3,
-        "src":"/rzn90.jpg",
+        "src":"/rzn90.png",
         "name" : "FlameLine Coza/RZN90",
         "price" : ""
     },

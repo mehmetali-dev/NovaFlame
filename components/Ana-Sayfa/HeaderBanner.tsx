@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import Head from 'next/head';
 
 export const HeaderBanner = () => {
@@ -15,13 +15,13 @@ export const HeaderBanner = () => {
 
   const [currSlide, setCurrSlide] = useState(0)
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrSlide(currSlide === 0 ? 3 : currSlide - 1)
-  }
+  }, [currSlide]);  // currSlide bağımlılığı ile prevSlide fonksiyonunu memoize ediyoruz.
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrSlide(currSlide === 3 ? 0 : currSlide + 1)
-  }
+  }, [currSlide]);  // currSlide bağımlılığı ile nextSlide fonksiyonunu memoize ediyoruz.
 
   // Mobilde otomatik geçişi sağlamak için useEffect
   useEffect(() => {
@@ -30,7 +30,7 @@ export const HeaderBanner = () => {
     }, 5000); // 5000 ms = 5 saniye
 
     return () => clearInterval(intervalId); // Component unmount olduğunda interval temizlenir
-  }, [currSlide]);
+  }, [nextSlide]);  // nextSlide fonksiyonuna bağımlı
 
   return (
     <>
@@ -73,24 +73,20 @@ export const HeaderBanner = () => {
           </div>
 
           {/* Butonlar sadece masaüstü için görünür */}
-
           <div className='absolute top-[calc(100vh-300px)] left-0 right-0 w-fit mx-auto hidden md:flex gap-8'>
-  <div onClick={prevSlide} className='w-14 h-12 border-[#acacac] flex items-center justify-center
-    hover:cursor-pointer hover:bg-orange-400 hover:text-white active:bg-gray-900 duration-300'>
-    <Image src="/left_arrow.svg" alt='left_arrow' width={10} height={10} />
-  </div>
-  <div onClick={nextSlide} className='w-14 h-12 border-[#acacac] flex items-center justify-center
-    hover:cursor-pointer hover:bg-orange-400 hover:text-white active:bg-gray-900 duration-300'>
-    <Image src="/right_arrow.svg" alt='right_arrow' width={10} height={10} />
-  </div>
-</div>
-
-
-
+            <div onClick={prevSlide} className='w-14 h-12 border-[#acacac] flex items-center justify-center
+              hover:cursor-pointer hover:bg-orange-400 hover:text-white active:bg-gray-900 duration-300'>
+              <Image src="/left_arrow.svg" alt='left_arrow' width={10} height={10} />
+            </div>
+            <div onClick={nextSlide} className='w-14 h-12 border-[#acacac] flex items-center justify-center
+              hover:cursor-pointer hover:bg-orange-400 hover:text-white active:bg-gray-900 duration-300'>
+              <Image src="/right_arrow.svg" alt='right_arrow' width={10} height={10} />
+            </div>
+          </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default HeaderBanner
+export default HeaderBanner;
