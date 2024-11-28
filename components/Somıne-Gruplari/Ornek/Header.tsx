@@ -120,9 +120,7 @@ const Header: React.FC<PostContentProps> = ({ title, content, images, pdf }) => 
                     <div className="w-full md:w-1/4 p-4 bg-gray-200 rounded-lg shadow-lg cursor-pointer flex flex-col md:h-[300px]">
     <div className="flex justify-between items-center">
         <h4 className="font-semibold text-lg">Ürün Kataloğu</h4>
-        <button onClick={toggleFullScreen} className="text-gray-600 hover:text-black">
-            <FaExpand className="w-5 h-5" />
-        </button>
+        
     </div>
     <a 
         href={pdf} 
