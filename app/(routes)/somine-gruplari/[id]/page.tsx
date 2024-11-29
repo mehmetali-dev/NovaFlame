@@ -1,6 +1,6 @@
 import React from 'react';
 import pageContent from '@/constants/pageContent';
-import Header from '@/components/Somıne-Gruplari/Detay/Header';
+import Header from '@/components/Somıne-Gruplari/Ornek/Header';
 import Navbar from '@/components/Navbar';
 
 interface Post {

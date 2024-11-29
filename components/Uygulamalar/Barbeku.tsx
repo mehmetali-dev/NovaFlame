@@ -154,7 +154,7 @@ const Barbekü = () => {
               alt={filteredData[selectedImg].location}
               width={1200}
               height={900}
-              className="w-full h-full object-contain z lg:h-[85vh] sm:object-cover " // Masaüstü için daha büyük yükseklik
+              className="w-full h-full object-contain z lg:h-[85vh] " // Masaüstü için daha büyük yükseklik
               onContextMenu={handleRightClick}
             />
 
