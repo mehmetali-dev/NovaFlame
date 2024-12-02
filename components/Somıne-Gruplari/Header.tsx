@@ -292,10 +292,10 @@ Orta şömine hazneleri, şık tasarımıyla evinize sıcaklık ve estetik katar
                         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
                                 <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
-                                    <a href="#">Gazlı Şömine Hazneleri</a>
+                                    <a href="#">Doğalgazlı Şömine Hazneleri</a>
                                 </p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                                Gazlı şömineler, modern tasarımlarla şık ve verimli ısınma sağlar.
+                                DoğalgazlıGazlı şömineler, modern tasarımlarla şık ve verimli ısınma sağlar.
                                 </p>
                             </div>
                             <div className="flex flex-1 items-center justify-center h-full ">

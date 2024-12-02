@@ -101,8 +101,8 @@ const pageContent = [
     },
     {
         id: "Gazli-Somine",
-        title: "Gazlı Şömine Hazneleri ",
-        content: "Gaziantep, Adana, Kahramanmaraş, Malatya, Hatay, Şanlıurfa, Adıyaman ve tüm Güneydoğu Bölgesi'nde gazlı şömine hazneleri yapımı hizmeti sunuyoruz. Gazlı şömine hazneleri, modern tasarımları ve yüksek ısı verimliliği ile öne çıkar. Bu hazneler, geleneksel şömine estetiğini modern teknolojiyle birleştirir, hem şık hem de verimli bir ısınma sağlar. Doğal gaz ile çalışan modeller, kullanımı pratik ve çevre dostudur. İç mekan dekorasyonuna uyum sağlamak amacıyla dekoratif taşlar veya seramik fayanslarla kaplanabilir. Yüksek enerji verimliliği ile enerji tasarrufu sağlarken, düzenli bakım ve temizlik önemlidir. Güvenlik standartlarına uygun bir kurulum, uzun ömürlü ve güvenli kullanım için gereklidir. Profesyonel destekle, gazlı şömine hazneleri, estetik ve fonksiyonel açıdan mükemmel bir seçenek sunar.",
+        title: "DoğalGazlı Şömine Hazneleri ",
+        content: "Gaziantep, Adana, Kahramanmaraş, Malatya, Hatay, Şanlıurfa, Adıyaman ve tüm Güneydoğu Bölgesi'nde Doğalgazlı şömine hazneleri yapımı hizmeti sunuyoruz. DoğalGazlı şömine hazneleri, modern tasarımları ve yüksek ısı verimliliği ile öne çıkar. Bu hazneler, geleneksel şömine estetiğini modern teknolojiyle birleştirir, hem şık hem de verimli bir ısınma sağlar. Doğal gaz ile çalışan modeller, kullanımı pratik ve çevre dostudur. İç mekan dekorasyonuna uyum sağlamak amacıyla dekoratif taşlar veya seramik fayanslarla kaplanabilir. Yüksek enerji verimliliği ile enerji tasarrufu sağlarken, düzenli bakım ve temizlik önemlidir. Güvenlik standartlarına uygun bir kurulum, uzun ömürlü ve güvenli kullanım için gereklidir. Profesyonel destekle, Doğalgazlı şömine hazneleri, estetik ve fonksiyonel açıdan mükemmel bir seçenek sunar.",
         images: [
             "/Şömine Grupları/gazlı1.jpg",
             
