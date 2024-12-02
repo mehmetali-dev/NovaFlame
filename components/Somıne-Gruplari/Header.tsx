@@ -33,7 +33,7 @@ const Header: React.FC = () => {
         6: { title: "U Tipi Şömine Hazneleri", description: "U tipi şömine hazneleri, modern tasarımı ve yüksek verimiyle ısınma sağlar.", link: "/somine-gruplari/U-Tipi-Somine" },
         7: { title: "L Tipi Şömine Hazneleri ", description: "L tipi şömine hazneleri, şık tasarımı ve güçlü ısınma performansıyla ideal.", link: "/somine-gruplari/L-Tipi-Somine" },
         8: { title: "Şömine Aksesuarları", description: "Şömine aksesuarları, şöminenizi tamamlar ve kullanım kolaylığı sağlar.", link: "/somine-gruplari/Somine-Aksesuarlari" },
-        9: { title: "Gazlı Şömine Hazneleri", description: "Gazlı şömineler, modern tasarımlarla şık ve verimli ısınma sağlar.", link: "/somine-gruplari/Gazli-Somine" },
+        9: { title: "DoğalGazlı Şömine Hazneleri", description: "DoğalGazlı şömineler, modern tasarımlarla şık ve verimli ısınma sağlar.", link: "/somine-gruplari/Gazli-Somine" },
     };
 
     return (
@@ -295,7 +295,7 @@ Orta şömine hazneleri, şık tasarımıyla evinize sıcaklık ve estetik katar
                                     <a href="#">Doğalgazlı Şömine Hazneleri</a>
                                 </p>
                                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                                DoğalgazlıGazlı şömineler, modern tasarımlarla şık ve verimli ısınma sağlar.
+                                DoğalGazlı şömineler, modern tasarımlarla şık ve verimli ısınma sağlar.
                                 </p>
                             </div>
                             <div className="flex flex-1 items-center justify-center h-full ">
