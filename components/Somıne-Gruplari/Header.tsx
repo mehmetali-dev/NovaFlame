@@ -25,14 +25,15 @@ const Header: React.FC = () => {
     const handleClose = () => setOpen({ id: null, isOpen: false });
 
     const modalContent: Record<number, ModalContentType> = {
-        1: { title: "Orta Şömine Hazneleri", description: "Orta şömine hazneleri, şık tasarımıyla evinize sıcaklık ve estetik katar.", link: "/somine-gruplari/elektrikli1" },
-        2: { title: "Elektrikli Şömineler", description: "Elektrikli şömineler, pratik ısınma ve modern tasarımlarıyla mekanları güzelleştirir.", link: "/somine-gruplari/elektrikli2" },
-        3: { title: "Bioethanol Şömine Hazneleri", description: "Bioethanol şömine hazneleri, temiz enerjiyle şık ısınma ve ambiyans yaratır.", link: "/somine-gruplari/elektrikli3" },
-        4: { title: "Barbeküler", description: "Barbeküler, açık havada keyifli yemek pişirme ve sosyal anlar sunar.", link: "/somine-gruplari/elektrikli4" },
-        5: { title: "Klasik Şömine Hazneleri", description: "Klasik şömine hazneleri, geleneksel ısınma ve rustik atmosfer sağlar.",  link: "/somine-gruplari/elektrikli5", },
-        6: { title: "U Tipi Şömine Hazneleri", description: "U tipi şömine hazneleri, modern tasarımı ve yüksek verimiyle ısınma sağlar.", link: "/somine-gruplari/elektrikli6" },
-        7: { title: "L Tipi Şömine Hazneleri ", description: "L tipi şömine hazneleri, şık tasarımı ve güçlü ısınma performansıyla ideal.", link: "/somine-gruplari/elektrikli7" },
-        8: { title: "Şömine Aksesuarları", description: "Şömine aksesuarları, şöminenizi tamamlar ve kullanım kolaylığı sağlar.", link: "/somine-gruplari/elektrikli8" },
+        1: { title: "Orta Şömine Hazneleri", description: "Orta şömine hazneleri, şık tasarımıyla evinize sıcaklık ve estetik katar.", link: "/somine-gruplari/Orta-Somine" },
+        2: { title: "Elektrikli Şömineler", description: "Elektrikli şömineler, pratik ısınma ve modern tasarımlarıyla mekanları güzelleştirir.", link: "/somine-gruplari/Elektrikli-Somine" },
+        3: { title: "Bioethanol Şömine Hazneleri", description: "Bioethanol şömine hazneleri, temiz enerjiyle şık ısınma ve ambiyans yaratır.", link: "/somine-gruplari/Bioetanol-Somine" },
+        4: { title: "Barbeküler", description: "Barbeküler, açık havada keyifli yemek pişirme ve sosyal anlar sunar.", link: "/somine-gruplari/Barbeku" },
+        5: { title: "Klasik Şömine Hazneleri", description: "Klasik şömine hazneleri, geleneksel ısınma ve rustik atmosfer sağlar.",  link: "/somine-gruplari/Klasik-Somine", },
+        6: { title: "U Tipi Şömine Hazneleri", description: "U tipi şömine hazneleri, modern tasarımı ve yüksek verimiyle ısınma sağlar.", link: "/somine-gruplari/U-Tipi-Somine" },
+        7: { title: "L Tipi Şömine Hazneleri ", description: "L tipi şömine hazneleri, şık tasarımı ve güçlü ısınma performansıyla ideal.", link: "/somine-gruplari/L-Tipi-Somine" },
+        8: { title: "Şömine Aksesuarları", description: "Şömine aksesuarları, şöminenizi tamamlar ve kullanım kolaylığı sağlar.", link: "/somine-gruplari/Somine-Aksesuarlari" },
+        9: { title: "Gazlı Şömine Hazneleri", description: "Gazlı şömineler, modern tasarımlarla şık ve verimli ısınma sağlar.", link: "/somine-gruplari/Gazli-Somine" },
     };
 
     return (
@@ -286,8 +287,30 @@ Orta şömine hazneleri, şık tasarımıyla evinize sıcaklık ve estetik katar
                     </div>
                 </div>
 
-                
+                <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 transition-transform duration-300 hover:scale-105 mt-3 border border-gray-300 rounded-lg" onClick={() => handleOpen(9)}>
+                        <div className="absolute inset-px rounded-lg bg-white"></div>
+                        <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
+                            <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+                                <p className="mt-2 text-lg/7 font-medium tracking-tight text-gray-950 max-lg:text-center">
+                                    <a href="#">Gazlı Şömine Hazneleri</a>
+                                </p>
+                                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                                Gazlı şömineler, modern tasarımlarla şık ve verimli ısınma sağlar.
+                                </p>
+                            </div>
+                            <div className="flex flex-1 items-center justify-center h-full ">
+    <Image
+        className="w-[min(500px,80vw)] h-[50%] object-contain"
+        src="/gazlı.jpeg"
+        alt="Bioethanol Şömine Hazneleri"
+        width={800}  // Bu değeri ihtiyaca göre değiştirebilirsiniz
+        height={400} // Bu değeri ihtiyaca göre değiştirebilirsiniz
+    />
+
+        </div>
             </div>
+        </div>
+        </div>
         </div>
         </>
     );
