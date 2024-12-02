@@ -39,7 +39,7 @@ const Catalog = () => {
                         <p className='text-[10px] md:text-xl font-semibold mt-4 text-[#7c7c7c]'>
                             * Elektrikli şömineler, ısıtan ve dekoratif etkisi olan pratik cihazlardır. Kolay kurulum ve temiz kullanım sunarlar.
                         </p>
-                        <Link href="/somine-gruplari/elektrikli2" className='py-1 w-24 md:w-36 flex items-center justify-center border border-black rounded-3xl text-xs md:text-xl mt-4 transition-colors duration-300 hover:bg-orange-500 hover:text-white'>
+                        <Link href="/somine-gruplari/Elektrikli-Somine" className='py-1 w-24 md:w-36 flex items-center justify-center border border-black rounded-3xl text-xs md:text-xl mt-4 transition-colors duration-300 hover:bg-orange-500 hover:text-white'>
                             Katalog
                         </Link>
                     </div>
@@ -54,7 +54,7 @@ const Catalog = () => {
                             <p className='text-[10px] md:text-base font-semibold mt-4 text-gray-400'>
                                 * Genellikle taş, mermer veya dökme demir gibi malzemelerle zenginleştirilen bu tasarımlar, odanın dekoruna katkı sağlar.
                             </p>
-                            <Link href="/somine-gruplari/elektrikli6" className='text-white border-white py-1 w-24 md:w-36 flex items-center justify-center border rounded-3xl text-xs md:text-lg mt-4 transition-colors duration-300 hover:bg-orange-500 hover:text-white'>
+                            <Link href="/somine-gruplari/U-Tipi-Somine" className='text-white border-white py-1 w-24 md:w-36 flex items-center justify-center border rounded-3xl text-xs md:text-lg mt-4 transition-colors duration-300 hover:bg-orange-500 hover:text-white'>
                                 Katalog
                             </Link>
                         </div>
@@ -67,7 +67,7 @@ const Catalog = () => {
                             <p className='text-[10px] md:text-base font-semibold mt-4 text-gray-300'>
                                 * L tipi şömine hazneleri, zarif tasarımı ve yüksek ısınma verimliliği ile mükemmel bir ısınma çözümü sunar.
                             </p>
-                            <Link href="/somine-gruplari/elektrikli7" className='text-[#292929] border-[#4b4b4b] py-1 w-24 md:w-36 flex items-center justify-center border rounded-3xl text-xs md:text-lg mt-4 transition-colors duration-300 hover:bg-orange-500 hover:text-white'>
+                            <Link href="/somine-gruplari/L-Tipi-Somine" className='text-[#292929] border-[#4b4b4b] py-1 w-24 md:w-36 flex items-center justify-center border rounded-3xl text-xs md:text-lg mt-4 transition-colors duration-300 hover:bg-orange-500 hover:text-white'>
                                 Katalog
                             </Link>
                         </div>
