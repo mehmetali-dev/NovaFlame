@@ -9,9 +9,7 @@ export const HeaderBanner = () => {
   const data = [
     "/banner11.png",
     "/banner22.png",       
-    "/banner33.png",
-    
-    
+    "/banner33.png",  
   ];
 
   const [currSlide, setCurrSlide] = useState(0)
