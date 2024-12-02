@@ -10,7 +10,7 @@ export const HeaderBanner = () => {
     "/banner11.png",
     "/banner22.png",       
     "/banner33.png",
-    "",
+    
     
   ];
 
