@@ -7,9 +7,9 @@ import Head from 'next/head';
 export const HeaderBanner = () => {
 
   const data = [
-    "/Banner11.png",
-    "/Banner22.png",       
-    "/Banner33.png",
+    "/banner11.png",
+    "/banner22.png",       
+    "/banner33.png",
     "",
     
   ];
