@@ -73,15 +73,7 @@ const Elektrik = () => {
                 height={300}
                 onContextMenu={handleRightClick}
               />
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <Image
-                  src="/novasominelogo.webp"
-                  alt="Logo"
-                  width={100}
-                  height={100}
-                  className="opacity-100"
-                />
-              </div>
+              
             </div>
             <div className="p-5">
               <div className="flex items-center">
