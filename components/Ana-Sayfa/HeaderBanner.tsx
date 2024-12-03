@@ -15,12 +15,12 @@ export const HeaderBanner = () => {
   const [currSlide, setCurrSlide] = useState(0)
 
   const prevSlide = useCallback(() => {
-    setCurrSlide(currSlide === 0 ? 3 : currSlide - 1)
-  }, [currSlide]);  // currSlide bağımlılığı ile prevSlide fonksiyonunu memoize ediyoruz.
+    setCurrSlide(currSlide === 0 ? 2 : currSlide - 1); // Loop back to last image when at first one
+  }, [currSlide]);
 
   const nextSlide = useCallback(() => {
-    setCurrSlide(currSlide === 3 ? 0 : currSlide + 1)
-  }, [currSlide]);  // currSlide bağımlılığı ile nextSlide fonksiyonunu memoize ediyoruz.
+    setCurrSlide(currSlide === 2 ? 0 : currSlide + 1); // Loop back to first image when at last one
+  }, [currSlide]);
 
   // Mobilde otomatik geçişi sağlamak için useEffect
   useEffect(() => {
@@ -36,7 +36,7 @@ export const HeaderBanner = () => {
       {/* SEO Meta Tagleri */}
       <Head>
         <title>Anasayfa - Nova Flame</title>
-        <meta name="description" content=" Gaziantep, Adana, Mersin, Kahramanmaraş, Şanlıurfa, Malatya, Adıyaman, Hatay Ve Tüm Güneydoğu Bölgesinde Odunlu şömine, barbekü, elektrikli şömine, ekmek fırınları, biogazlı şömine çeşitlerimiz ile sektörde siz müşterilerimize kaliteli, güvenilir ve ekonomik hizmetler sunmaya kararlılıkla devam etmekteyiz." />
+        <meta name="description" content="Gaziantep, Adana, Mersin, Kahramanmaraş, Şanlıurfa, Malatya, Adıyaman, Hatay Ve Tüm Güneydoğu Bölgesinde Odunlu şömine, barbekü, elektrikli şömine, ekmek fırınları, biogazlı şömine çeşitlerimiz ile sektörde siz müşterilerimize kaliteli, güvenilir ve ekonomik hizmetler sunmaya kararlılıkla devam etmekteyiz." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="Gaziantep Şömine, Adana Şömine, Şanlıurfa Şömine, Hatay Şömine, Adıyaman Şömine, Güneydoğu Şömine, Elektrikli Şömine, Elektrikli Şömine Modelleri, elektrikli somine, elektrikli şömine üreticileri, elektrikli şömine modelleri ve fiyatları, elektrikli şömine 150cm, tektes şömine, elektrikli şömine malatya, elektrikli şömine çeşitleri, elektrikli somine modelleri, hazır şömine modelleri, şömine fiyatları, şömine elektrik, zaya şömine, , flameline şömine, dekoratif şömine, 150cm elektrikli şömine, hazir sömine, odun şömine fiyatları, elektrikli şömine tasarımları, elektrikli şömine dekorasyon, elektrikli şömine haznesi, dlc şömine, şömine elektrikli, portatif elektrikli şömine, elk şömine, taşınılabilir elektrikli şömine, elektrikli şömine görselleri, elektronik şömine, salon elektrikli şömine,   " />
         <link rel="canonical" href="https://novasomine.com/" />
@@ -56,7 +56,7 @@ export const HeaderBanner = () => {
         <div className='w-screen'>
           <div
             style={{ transform: `translate(-${currSlide * 100}vw)` }}
-            className='w-[400vw] h-full flex transition-transform duration-1000'>
+            className='w-[300vw] h-screen flex transition-transform duration-1000'> {/* Yüksekliği tam olarak artırdık */}
             {/* Resimleri layout='intrinsic' ile belirli boyutlarda göstermek */}
             {data.map((src, index) => (
               <div key={index} className="relative w-screen h-full">
@@ -64,7 +64,7 @@ export const HeaderBanner = () => {
                   src={src} 
                   alt={`Slide ${index + 1}`} 
                   width={1920} 
-                  height={1080} 
+                  height={1200} 
                   objectFit="cover" 
                 />
               </div>
@@ -72,7 +72,7 @@ export const HeaderBanner = () => {
           </div>
 
           {/* Butonlar sadece masaüstü için görünür */}
-          <div className='absolute top-[calc(100vh-100px)] left-0 right-0 w-fit mx-auto hidden md:flex gap-8'>
+          <div className='absolute top-[calc(100vh-200px)] left-0 right-0 w-fit mx-auto hidden md:flex gap-8'>
             <div onClick={prevSlide} className='w-14 h-12 border-[#acacac] flex items-center justify-center
               hover:cursor-pointer hover:bg-orange-400 hover:text-white active:bg-gray-900 duration-300'>
               <Image src="/left_arrow.svg" alt='left_arrow' width={10} height={10} />

@@ -39,7 +39,7 @@ const About = () => {
                 <div className='flex flex-col items-center justify-center'>
 
                     {/* Toggle Button */}
-                    <div className="flex items-center space-x-2 mb-4">
+                    <div className="flex items-center space-x-2 mb-4z">
                         {isOn ? <span className="text-gray-700 max-sm:text-xs">Şömineyi Kapat</span> : <span className="text-gray-700 max-sm:text-xs">Şömineyi Aç</span>}
                         <div
                             className={`relative w-12 h-6 rounded-full cursor-pointer transition-colors duration-300 ease-in-out ${isOn ? 'bg-orange-500' : 'bg-gray-400'}`}
