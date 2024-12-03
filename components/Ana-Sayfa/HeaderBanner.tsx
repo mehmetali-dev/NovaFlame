@@ -15,11 +15,11 @@ export const HeaderBanner = () => {
   const [currSlide, setCurrSlide] = useState(0)
 
   const prevSlide = useCallback(() => {
-    setCurrSlide(currSlide === 0 ? 2 : currSlide - 1); // Loop back to last image when at first one
+    setCurrSlide(currSlide === 0 ? 2 : currSlide - 1); // İlk slide'dan sonra sonrasına dön
   }, [currSlide]);
 
   const nextSlide = useCallback(() => {
-    setCurrSlide(currSlide === 2 ? 0 : currSlide + 1); // Loop back to first image when at last one
+    setCurrSlide(currSlide === 2 ? 0 : currSlide + 1); // Son slide'dan sonra başa dön
   }, [currSlide]);
 
   // Mobilde otomatik geçişi sağlamak için useEffect
@@ -52,12 +52,14 @@ export const HeaderBanner = () => {
         <meta property="og:locale" content="tr_TR" />
       </Head>
 
-      <div className='w-full h-auto overflow-x-hidden bottom-5'>
-        <div className='w-screen'>
+      {/* Banner container */}
+      <div className="w-full h-[50vh] md:h-[70vh] bottom-5 overflow-hidden"> {/* overflow-hidden eklenerek yatay kayma engelleniyor */}
+        <div className="w-screen">
           <div
             style={{ transform: `translate(-${currSlide * 100}vw)` }}
-            className='w-[300vw] h-screen flex transition-transform duration-1000'> {/* Yüksekliği tam olarak artırdık */}
-            {/* Resimleri layout='intrinsic' ile belirli boyutlarda göstermek */}
+            className="w-[300vw] h-[25vh] md:h-screen flex transition-transform duration-1000">
+            {/* Masaüstü için resim boyutunu küçültüyoruz */}
+            {/* Mobilde resme müdahale etmiyoruz */}
             {data.map((src, index) => (
               <div key={index} className="relative w-screen h-full">
                 <Image 
@@ -66,6 +68,7 @@ export const HeaderBanner = () => {
                   width={1920} 
                   height={1200} 
                   objectFit="cover" 
+                  className="w-full h-[45vh] md:h-[70vh]" // Mobilde h-[70vh], masaüstünde h-[80vh]
                 />
               </div>
             ))}
