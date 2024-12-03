@@ -29,7 +29,6 @@ const DynamicTabs: React.FC = () => {
     <div className="flex w-full flex-col ">
       
       <Tabs key="solid" variant="solid" aria-label="Tabs variant" size="lg"  items={tabs} className='w-full flex items-center justify-center'>
-        
         {(item) => (
           <Tab key={item.id} title={item.label}  className=''>
             <Card className='w-full'>

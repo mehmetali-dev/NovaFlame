@@ -35,7 +35,7 @@ const About = () => {
             </Head>
 
             {/* İçerik */}
-            <section className='w-full h-full flex items-center justify-center mb-40 px-10'>
+            <section className='w-full h-full flex items-center justify-center mb-40 px-10 mt-40'>
                 <div className='flex flex-col items-center justify-center'>
 
                     {/* Toggle Button */}
@@ -54,13 +54,13 @@ const About = () => {
 
                     {/* Nova Flame Text */}
                     <div
-                        className={`text-[12rem] max-sm:text-[3.6rem] max-md:text-[6rem] font-semibold londrina-shadow-regular -mb-44 max-sm:-mb-[5rem] max-md:-mb-28 opacity-25 text-[#000000] ${isOn ? 'flame-effect' : ''}`}
+                        className={`text-[12rem] max-sm:text-[5rem] max-md:text-[6rem] font-semibold londrina-shadow-regular -mb-44 max-sm:-mb-[5rem] max-md:-mb-28 opacity-25 text-[#000000] ${isOn ? 'flame-effect' : ''}`}
                     >
                         Nova Flame
                     </div>
 
                     {/* Image Container */}
-                    <div className="relative w-full max-w-[950px] h-[400px] max-sm:w-full max-sm:h-[200px] max-md:w-[90%] max-md:h-[250px]">
+                    <div className="relative w-full max-w-[1050px] h-[400px] max-sm:w-[50vh] max-sm:h-[200px] max-md:w-[90%] max-md:h-[250px] ">
                         {/* Image shown when isOn is true */}
                         <div
                             className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${isOn ? 'opacity-100' : 'opacity-0'}`}

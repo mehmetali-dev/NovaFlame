@@ -48,9 +48,9 @@ const Catalog = () => {
                 <div className='w-full h-[30rem] md:h-[40rem] flex flex-col gap-4'>
                     {/* Sağ Üst Kategori */}
                     <div className='w-full h-1/2 rounded-3xl bg-custom-image2 flex flex-col items-center transform transition-transform duration-300 hover:scale-105'>
-                        <div className='pt-2 flex flex-col h-full w-full text-left font-medium text-xs md:text-3xl px-6 md:px-12'>
+                        <div className='pt-5 flex flex-col h-full w-full text-left font-medium text-xs md:text-3xl px-6 md:px-12'>
                             <p className='text-xs md:text-lg text-white'>Şömine Grupları</p>
-                            <p className='text-lg md:text-3xl font-semibold mt-4 text-white'>U Tipi Şömine Hazneleri</p>
+                            <p className='text-lg md:text-3xl font-semibold mt-4 max-sm:mt-1 text-white'>U Tipi Şömine Hazneleri</p>
                             <p className='text-[10px] md:text-base font-semibold mt-4 text-gray-400'>
                                 * Genellikle taş, mermer veya dökme demir gibi malzemelerle zenginleştirilen bu tasarımlar, odanın dekoruna katkı sağlar.
                             </p>
@@ -61,9 +61,9 @@ const Catalog = () => {
                     </div>
                     {/* Sağ Alt Kategori */}
                     <div className='w-full h-1/2'>
-                        <div className='pt-2 flex flex-col h-full rounded-3xl bg-custom-image3 w-full text-left font-medium text-xs md:text-3xl px-6 md:px-12 transform transition-transform duration-300 hover:scale-105'>
+                        <div className='pt-5 flex flex-col h-full rounded-3xl bg-custom-image3 w-full text-left font-medium text-xs md:text-3xl px-6 md:px-12 transform transition-transform duration-300 hover:scale-105'>
                             <p className='text-xs md:text-lg text-[#353535]'>Şömine Grupları</p>
-                            <p className='text-lg md:text-3xl font-semibold mt-4 text-gray-100'>L Tipi Şömine Hazneleri</p>
+                            <p className='text-lg md:text-3xl font-semibold mt-4 max-sm:mt-1 text-gray-100'>L Tipi Şömine Hazneleri</p>
                             <p className='text-[10px] md:text-base font-semibold mt-4 text-gray-300'>
                                 * L tipi şömine hazneleri, zarif tasarımı ve yüksek ısınma verimliliği ile mükemmel bir ısınma çözümü sunar.
                             </p>
