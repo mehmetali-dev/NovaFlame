@@ -71,9 +71,9 @@ const Banner = () => {
 {/* Patlayan Flaş Animasyonu (Yalnızca Yazıyla) */}
 <div className="w-full bg-[#F06B1C] text-white text-center py-2 overflow-hidden">
   <div className="flash-animation flex items-center justify-center">
-    <span className="text-sm md:text-lg flash-text mobile-text">
-      🏷️ Büyük Kış Kampanyası Başladı! Elektrikli Şöminelerde %20'ye Varan İndirim Fırsatını Kaçırmayın! 🔥
-    </span>
+  <span className="text-sm md:text-lg flash-text">
+  🏷️ Büyük Kış Kampanyası Başladı! Elektrikli Şöminelerde %20&#39;ye Varan İndirim Fırsatını Kaçırmayın! 🔥
+</span>
   </div>
 </div>
 
