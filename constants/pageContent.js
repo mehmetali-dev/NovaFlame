@@ -40,8 +40,11 @@ const pageContent = [
         title: "Barbeküler ",
         content: "Gaziantep, Adana, Kahramanmaraş, Malatya, Hatay, Şanlıurfa, Adıyaman ve tüm Güneydoğu Bölgesi'nde barbekü şömine  hizmeti sunuyoruz. Barbekü şömine, açık havada yemek pişirme amacıyla kullanılan ve genellikle bahçelerde veya teraslarda tercih edilen bir şömine türüdür. Et, balık, sebze gibi yiyecekler,  ızgarasında ateşte pişirilir. Bu şömineler, odun, kömür, gaz ya da elektrik gibi çeşitli yakıtlarla çalışabilen modellerle sunulur. Metal, taş ve seramik gibi dayanıklı malzemelerden üretilen barbekü şömineleri, taşınabilir veya sabit olarak tercih edilebilir. Birçok model, ek aksesuarlar (ızgara, kapak, yan masa vb.) ile birlikte gelir ve kullanımı oldukça pratiktir. Düzenli bakım gerektiren bu şömineler, açık havada lezzetli yemekler yapmak isteyenler için mükemmel bir seçimdir.",
         images: [
+            "/Şömine Grupları/b6.jpeg",
+            "/Şömine Grupları/b7.jpeg",
             "/Şömine Grupları/barbeku-1.jpg",
             "/Şömine Grupları/barbeku-2.jpg",
+            
 
         ],
         pdf: "/katalog2.pdf"

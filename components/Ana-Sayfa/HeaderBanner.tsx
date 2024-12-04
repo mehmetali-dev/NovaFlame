@@ -68,7 +68,7 @@ export const HeaderBanner = () => {
                   width={1920} 
                   height={1200} 
                   objectFit="cover" 
-                  className="w-full h-[45vh] md:h-[70vh]" // Mobilde h-[70vh], masaüstünde h-[80vh]
+                  className="w-full h-[46vh] md:h-[70vh]" // Mobilde h-[70vh], masaüstünde h-[80vh]
                 />
               </div>
             ))}

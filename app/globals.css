@@ -87,3 +87,115 @@ body {
 }
 
 
+/* Genel CSS için */
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+}
+
+.flash-animation {
+  display: inline-block;
+  animation: flash 10s ease-out infinite;
+}
+
+.flash-text {
+  animation: text-flash 15s ease-in-out infinite;
+  font-weight: bold;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes text-flash {
+  0% {
+    color: #ffffff;
+  }
+  25% {
+    color: #f8f8f8;
+  }
+  50% {
+    color: #ffffff;
+  }
+  75% {
+    color: #f8f8f8;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+/* Mobilde düzenlemeler */
+@media (max-width: 768px) {
+  /* Sosyal medya ikonları mobilde küçük olacak */
+  .social-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* İletişim bilgileri mobilde alt alta sıralanacak */
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Aralarındaki mesafe */
+  }
+
+  /* İletişim bilgileri font boyutları küçültülecek */
+  .contact-info a {
+    font-size: 12px;
+  }
+
+  /* Flash mesajı mobilde daha küçük olacak */
+  .flash-text {
+    font-size: 14px;
+  }
+
+  /* Flex-wrap özelliği ile içerik taşmasını önleyelim */
+  .social-icon-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* Masaüstü düzeni */
+@media (min-width: 769px) {
+  /* Masaüstü görünümü için standart boyutlar */
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* İletişim bilgileri sağa hizalanacak */
+  .contact-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* İletişim bilgileri arasındaki mesafe */
+  }
+
+  /* İletişim bilgileri font boyutları büyük olacak */
+  .contact-info a {
+    font-size: 14px;
+  }
+
+  /* Telefon numarası ve maili yan yana hizalamak için */
+  .contact-info .phone-email-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px; /* Telefon numarası ve mail arasındaki mesafe */
+  }
+}
