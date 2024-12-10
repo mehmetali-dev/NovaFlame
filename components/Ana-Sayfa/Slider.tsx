@@ -7,6 +7,7 @@ import Head from 'next/head';
 const Slider = () => {
   return (
     <>
+    
       {/* SEO Meta Tagleri */}
       <Head>
         <title>Anasayfa - Nova Flame</title>

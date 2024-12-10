@@ -9,6 +9,7 @@ import Link from 'next/link';
 const Products = () => {
     return (
         <>
+        
             {/* SEO Meta Tagleri */}
             <Head>
                 <title>Anasayfa - Nova Flame</title>

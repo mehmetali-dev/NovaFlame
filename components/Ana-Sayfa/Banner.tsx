@@ -9,12 +9,14 @@ import '/app/globals.css';
 const Banner = () => {
   return (
     <>
+
+    
       {/* SEO Meta Tagleri */}
       <Head>
         <title>Anasayfa - Nova Flame</title>
         <meta name="description" content="Gaziantep, Adana, Mersin, Kahramanmaraş, Şanlıurfa, Malatya, Adıyaman, Hatay Ve Tüm Güneydoğu Bölgesinde Odunlu şömine, barbekü, elektrikli şömine, ekmek fırınları, biogazlı şömine çeşitlerimiz ile sektörde siz müşterilerimize kaliteli, güvenilir ve ekonomik hizmetler sunmaya kararlılıkla devam etmekteyiz." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="Gaziantep Şömine, Adana Şömine, Şanlıurfa Şömine, Hatay Şömine, Adıyaman Şömine, Güneydoğu Şömine, Elektrikli Şömine, Elektrikli Şömine Modelleri..." />
+        <meta name="keywords" content="Nova şömine, Gaziantep Şömine, Adana Şömine, Şanlıurfa Şömine, Hatay Şömine, Adıyaman Şömine, Güneydoğu Şömine, Elektrikli Şömine, Elektrikli Şömine Modelleri,Odunlu Şömine, Doğalgazlı Şömine, Bioetanol şömine, etanol şömine, Orta Şömineler, Şömine Hazneleri, dlc şömine, tektes şömine, şömine elektrikli, elektronik şömine, invicta şömine, şömine kazanı, flameline şömine, " />
         <link rel="canonical" href="https://novasomine.com/" />
         <meta name="robots" content="index, follow" />
       </Head>

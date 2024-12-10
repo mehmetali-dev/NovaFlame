@@ -6,6 +6,8 @@ import Head from 'next/head';
 const Catalog = () => {
     return (
 <>
+
+
         {/* SEO Meta Tagleri */}
         <Head>
                 <title>Anasayfa - Nova Flame</title>

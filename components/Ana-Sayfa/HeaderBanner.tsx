@@ -33,6 +33,8 @@ export const HeaderBanner = () => {
 
   return (
     <>
+
+    
       {/* SEO Meta Tagleri */}
       <Head>
         <title>Anasayfa - Nova Flame</title>

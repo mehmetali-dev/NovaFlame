@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   // Arama motoru görünürlüğü ve başlık optimizasyonu
   openGraph: {
     title: "Nova Şömine - Elektrikli Ve Odunlu Şömine Hizmeti",
-    description: "Modern ve estetik şömine çözümleri. Güneydoğu Bölgesindeki en kaliteli şömine hizmetleri.",
+    description: "Modern ve estetik şömine çözümleri. Güneydoğu Bölgesindeki kaliteli şömine hizmetleri.",
     url: "https://novasomine.com", // Gerçek URL'nizi buraya yazın
     type: "website",
     images: [
       {
-        url: "/public/seo-image.jpg", // SEO için görsel (bu resmin URL'si önemli)
+        url: "/public/novasominelogo.webp", // SEO için görsel (bu resmin URL'si önemli)
         width: 1200,
         height: 630,
         alt: "Nova Şömine - Modern Şömine Tasarımı",
@@ -29,6 +29,7 @@ export const metadata: Metadata = {
   
   // Meta Etiketleri (SEO için kritik)
   keywords: [
+   "Nova şömine",
     "Gaziantep Şömine",
      "Adana Şömine",
      " Şanlıurfa Şömine",

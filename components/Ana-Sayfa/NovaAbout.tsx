@@ -6,6 +6,8 @@ import Head from 'next/head';
 const NovaAbout = () => {
     return (
         <>
+
+        
             {/* SEO Meta Tagleri */}
             <Head>
                 <title>Anasayfa - Nova Flame</title>
