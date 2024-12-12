@@ -60,7 +60,7 @@ const About = () => {
                     </div>
 
                     {/* Image Container */}
-                    <div className="relative w-full max-w-[1050px] h-[400px] max-sm:w-[48vh] max-lg:w-[77vh] max-sm:h-[200px] max-md:w-[90%] max-md:h-[250px] ">
+                    <div className="relative w-full  h-[400px] max-xs:w-[350px] max-sm:w-[47vh] max-lg:w-[77vh] max-sm:h-[200px] max-md:w-[90%] max-md:h-[250px] ">
                         {/* Image shown when isOn is true */}
                         <div
                             className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${isOn ? 'opacity-100' : 'opacity-0'}`}
