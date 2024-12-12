@@ -54,13 +54,13 @@ const About = () => {
 
                     {/* Nova Flame Text */}
                     <div
-                        className={`text-[12rem] max-sm:text-[4.8rem] max-md:text-[6rem] font-semibold londrina-shadow-regular -mb-44 max-sm:-mb-[5.4rem] max-md:-mb-40 opacity-25 text-[#000000] ${isOn ? 'flame-effect' : ''}`}
+                        className={`text-[12rem] max-sm:text-[4.8rem] max-md:text-[6rem] max-lg:text-[10rem] max-lg:-mb-17 max-lg:-mt-15 font-semibold londrina-shadow-regular -mb-44 max-sm:-mb-[5.4rem] max-md:-mb-40 opacity-25 text-[#000000] ${isOn ? 'flame-effect' : ''}`}
                     >
                         Nova Flame
                     </div>
 
                     {/* Image Container */}
-                    <div className="relative w-full max-w-[1050px] h-[400px] max-sm:w-[48vh] max-sm:h-[200px] max-md:w-[90%] max-md:h-[250px] ">
+                    <div className="relative w-full max-w-[1050px] h-[400px] max-sm:w-[48vh] max-lg:w-[77vh] max-sm:h-[200px] max-md:w-[90%] max-md:h-[250px] ">
                         {/* Image shown when isOn is true */}
                         <div
                             className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${isOn ? 'opacity-100' : 'opacity-0'}`}
