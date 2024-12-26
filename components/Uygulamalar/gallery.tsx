@@ -1,9 +1,4 @@
 "use client";
-
-import Image from "next/image";
-import db from "@/app/db/gallery.json";
-
-
 import { useState } from "react";
 import Head from 'next/head';
 import DynamicTabs from "./ToggleDetails";

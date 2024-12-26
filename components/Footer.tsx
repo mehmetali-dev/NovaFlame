@@ -146,25 +146,25 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <Link href="/somine-gruplari/elektrikli2" className="text-gray-700 transition hover:opacity-75"> Elektrikli Şömineler </Link>
+                  <Link href="/somine-gruplari/Elektrikli-Somine" className="text-gray-700 transition hover:opacity-75"> Elektrikli Şömineler </Link>
                 </li>
 
                 <li>
-                  <Link href="/somine-gruplari/elektrikli1" className="text-gray-700 transition hover:opacity-75"> Orta Şömine Hazneleri</Link>
+                  <Link href="/somine-gruplari/Orta-Somine" className="text-gray-700 transition hover:opacity-75"> Orta Şömine Hazneleri</Link>
                 </li>
 
                 <li>
-                  <Link href="/somine-gruplari/elektrikli5" className="text-gray-700 transition hover:opacity-75"> Klasik Şömine Hazneleri  </Link>
+                  <Link href="/somine-gruplari/Klasik-Somine" className="text-gray-700 transition hover:opacity-75"> Klasik Şömine Hazneleri  </Link>
                 </li>
                
                 <li>
-                  <Link href="/somine-gruplari/elektrikli4" className="text-gray-700 transition hover:opacity-75"> Barbekü Şömineler  </Link>
+                  <Link href="/somine-gruplari/Barbeku" className="text-gray-700 transition hover:opacity-75"> Barbekü Şömineler  </Link>
                 </li>
                 <li>
-                  <Link href="/somine-gruplari/elektrikli3" className="text-gray-700 transition hover:opacity-75"> etanol Şömine Hazneleri  </Link>
+                  <Link href="/somine-gruplari/Bioetanol-Somine" className="text-gray-700 transition hover:opacity-75"> etanol Şömine Hazneleri  </Link>
                 </li>
                 <li>
-                  <Link href="/somine-gruplari/elektrikli8" className="text-gray-700 transition hover:opacity-75"> Şömine Aksesuarları   </Link>
+                  <Link href="/somine-gruplari/Somine-Aksesuarlari" className="text-gray-700 transition hover:opacity-75"> Şömine Aksesuarları   </Link>
                 </li>
               </ul>
             </div>
@@ -183,6 +183,9 @@ const Footer = () => {
 
                 <li>
                   <Link href="/somine-gruplari" className="text-gray-700 transition hover:opacity-75"> Şömine Grupları  </Link>
+                </li>
+                <li>
+                  <Link href="/pelet-sobalari" className="text-gray-700 transition hover:opacity-75"> Pelet Sobaları  </Link>
                 </li>
                 <li>
                   <Link href="/uygulamalar" className="text-gray-700 transition hover:opacity-75"> Uygulamalarımız  </Link>
